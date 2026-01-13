@@ -1,0 +1,317 @@
+/* Reset and base styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0;
+  border-bottom: 1px black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 30px;
+}
+
+/* Style The Dropdown Button */
+.dropdownbtn {
+  color: white;
+  font-size: 16px;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #5d5d5d;
+  border-radius: 10px;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 1em;
+}
+
+.nav-section a:hover {
+  color: #007bff;
+}
+
+#newUser {
+  font-size: 14px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: left;
+}
+
+.profile-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-icon svg {
+  fill: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.signin{
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  width: 310px; /* เพิ่มความกว้าง */
+}
+
+.password-input {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 1rem;
+}
+
+.password-input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  pointer-events: all;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 150px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: auto;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
+.country-select {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #8b8b8b;
+}
+.footer-section a:hover {
+  color: #007bff; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.footer-section img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#newUser, #registerlink {
+  display: inline-block; /* ทำให้ทั้งสอง element อยู่ในแถวเดียวกัน */
+  margin: 0; /* กำหนดให้ไม่มี margin */
+}
+
+#newUser {
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+#newUser, #registerlink {
+  text-align: center;
+}
+
+#newUser, #registerlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
